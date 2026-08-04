@@ -6,7 +6,6 @@ export default function Logo({ color = "currentColor", className }: LogoProps) {
   return (
     <svg
       viewBox="0 0 150 150"
-      version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >

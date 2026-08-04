@@ -35,7 +35,7 @@ export default function Navbar() {
       <nav>
         <ul className="flex pr-1">
           {navLinks.map((link) => (
-            <li key={link.href} className="hover:*:text-gray-500">
+            <li key={link.href} className="hover:text-blue-600 ">
               <a href={link.href} className="m-2 font-semibold">
                 {link.label}
               </a>
