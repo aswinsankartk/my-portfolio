@@ -37,19 +37,25 @@ const techStack = [
 ];
 export default function Skills() {
   return (
-    <section className="p-8 border-b border-gray-200">
-      <p className="text-sm font-medium text-blue-700">
+    <section className="p-8 lg:p-9 lg:px-20 border-b border-gray-200">
+      <p className="text-sm md:text-lg font-medium text-blue-700">
         <span className="animate-pulse">&#11044;</span> &nbsp;
         <span className="text-gray-600">SKILLS</span>
       </p>
-      <div className="mt-3 grid grid-cols-2 grid-rows-8 gap-3 ">
+      <div className="mt-3 grid grid-cols-2 grid-rows-8 md:grid-cols-4 md:grid-rows-4 gap-3 ">
         {techStack.map((tech) => (
           <div
             key={tech.label}
-            className="flex justify-center gap-2 bg-white py-3 border rounded-lg border-gray-200 shadow-sm"
+            className="flex justify-center gap-2 lg:gap-4 md:gap-3 bg-white py-3 border rounded-lg border-gray-200 shadow-sm"
           >
-            <TechIcon icon={tech.icon} size={24} />
-            <span className="font-semibold text-sm">{tech.label}</span>
+            <TechIcon
+              icon={tech.icon}
+              size={24}
+              className="lg:size-8 md:size-5"
+            />
+            <span className="font-semibold text-sm lg:text-lg md:text-md flex items-center">
+              {tech.label}
+            </span>
           </div>
         ))}
       </div>

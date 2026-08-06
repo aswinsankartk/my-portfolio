@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
-import { Parkinsans } from "next/font/google";
+import { Parkinsans, Figtree } from "next/font/google";
 import "./globals.css";
 
 const parkinsans = Parkinsans({
   variable: "--font-parkinsans",
   weight: ["300", "400", "500", "600", "700", "800"],
+  subsets: ["latin"],
+});
+
+const figtree = Figtree({
+  variable: "--font-figtree",
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
 
