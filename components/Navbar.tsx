@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Logo from "./icons/Logo";
+import { IoMenu } from "react-icons/io5";
 
 const navLinks = [
   {
@@ -28,12 +29,15 @@ const navLinks = [
 
 export default function Navbar() {
   return (
-    <header className="p-2 px-4 flex justify-between items-center shadow-sm">
+    <header className=" py-2 px-4 flex justify-between items-center shadow-sm">
       <Link href="#">
-        <Logo color="currentColor" className="w-15 h-15" />
+        <Logo color="currentColor" className="w-12" />
       </Link>
       <nav>
-        <ul className="flex pr-1">
+        <button className="cursor-pointer md:hidden">
+          <IoMenu size={34} className="translate-y-1" />
+        </button>
+        <ul className="hidden md:flex">
           {navLinks.map((link) => (
             <li key={link.href} className="hover:text-blue-600 ">
               <a href={link.href} className="m-2 font-semibold">

@@ -9,9 +9,9 @@ const parkinsans = Parkinsans({
 });
 
 export const metadata: Metadata = {
-  title: "Aswin Sankar | Full Stack MERN Developer",
+  title: "Aswin Sankar TK | Full Stack MERN Developer",
   description:
-    "Portfolio of Aswin Sankar, a full stack developer specializing in React, Next.js, Node.js, Express.js and MongoDB.",
+    "Portfolio of Aswin Sankar TK, a full stack developer specializing in React, Next.js, Node.js, Express.js and MongoDB.",
   keywords: [
     "MERN developer",
     "React developer",
@@ -33,6 +33,7 @@ export default function RootLayout({
       lang="en"
       className={`${parkinsans.variable} h-full antialiased scroll-smooth`}
     >
+      <link rel="icon" href="/favicon.ico" sizes="any" />
       <body className={parkinsans.className}>{children}</body>
     </html>
   );
