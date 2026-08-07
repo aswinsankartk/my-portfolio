@@ -17,7 +17,11 @@ export default function Contact() {
         </h3>
 
         <div className="my-4 flex flex-col gap-3 font-semibold">
-          <Link href="mailto:aswinsankartk@gmail.com" className="w-full">
+          <Link
+            href="mailto:aswinsankartk@gmail.com"
+            className="w-full"
+            aria-label="Send an email"
+          >
             <button className="cursor-pointer hover:scale-101 hover:shadow-lg transition-all text-sm flex bg-white w-full rounded-md p-4 gap-3 shadow-md">
               <IoMdMail size={20} />
               aswinsankartk@gmail.com
@@ -25,22 +29,34 @@ export default function Contact() {
           </Link>
           <h3 className="self-center mt-1">@aswinsankartk</h3>
           <div className="flex justify-between">
-            <Link href="https://linkedin.com/in/aswinsankartk">
+            <Link
+              href="https://linkedin.com/in/aswinsankartk"
+              aria-label="View Linkedin profile"
+            >
               <button className="cursor-pointer hover:scale-103 hover:shadow-lg transition-all flex text-sm bg-white w-full shadow-md rounded-md p-4 gap-3">
                 <FaLinkedin size={20} />
               </button>
             </Link>
-            <Link href="https://github.com/aswinsankartk">
+            <Link
+              href="https://github.com/aswinsankartk"
+              aria-label="View Github profile"
+            >
               <button className="cursor-pointer hover:scale-103 hover:shadow-lg transition-all flex text-sm bg-white w-full shadow-md rounded-md p-4 gap-3">
                 <FaGithub size={20} />
               </button>
             </Link>
-            <Link href="https://x.com/aswinsankartk">
+            <Link
+              href="https://x.com/aswinsankartk"
+              aria-label="View X profile"
+            >
               <button className="cursor-pointer hover:scale-103 hover:shadow-lg transition-all flex text-sm bg-white w-full shadow-md rounded-md p-4 gap-3">
                 <FaXTwitter size={20} />
               </button>
             </Link>
-            <Link href="https://instagram.com/aswinsankartk">
+            <Link
+              href="https://instagram.com/aswinsankartk"
+              aria-label="View Instagram profile"
+            >
               <button className="cursor-pointer hover:scale-103 hover:shadow-lg transition-all flex text-sm bg-white w-full shadow-md rounded-md p-4 gap-3">
                 <FaInstagram size={20} />
               </button>
@@ -48,7 +64,10 @@ export default function Contact() {
           </div>
         </div>
         <div className="flex justify-center items-center pt-2">
-          <Link href="https://calendly.com/aswinsankartk/30min">
+          <Link
+            href="https://calendly.com/aswinsankartk/30min"
+            aria-label="Schedule a call"
+          >
             <button className="cursor-pointer hover:scale-103 hover:shadow-xl transition-all flex gap-3 py-3 px-4 font-semibold text-md bg-gray-950 border border-gray-700 text-white rounded-lg items-center shadow-lg shadow-gray-400">
               <FaArrowRight size={18} />
               Get in Touch

@@ -49,6 +49,7 @@ export default function Skills() {
         {techStack.map((tech) => (
           <div
             key={tech.label}
+            aria-label={tech.label}
             className="flex justify-center hover:scale-103 hover:shadow-lg transition-all gap-2 lg:gap-4 md:gap-3 bg-white py-3 border rounded-lg border-gray-200 shadow-sm"
           >
             <TechIcon

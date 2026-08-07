@@ -54,7 +54,7 @@ export default function Navbar() {
   }, []);
   return (
     <header className="transition-all ease-in-out  backdrop-blur-xl z-9 fixed w-full py-2 px-4 flex justify-between items-center shadow-sm">
-      <Link href="#">
+      <Link href="#" aria-label="Aswin Sankar TK Logo">
         <Logo color="currentColor" className="w-10" />
       </Link>
       <nav>
@@ -68,6 +68,7 @@ export default function Navbar() {
         </button>
         <div
           ref={menuRef}
+          aria-label="Dropdown Menu"
           className={`md:hidden ${open ? "block animate-menu-open" : "hidden"}  font-medium text-md gap-1 pl-4 pr-5 py-3 bg-white flex flex-col fixed z-10 -translate-x-30 rounded-lg shadow-xl inset-shadow-sm border border-gray-100`}
         >
           {navLinks.map((link) => (
@@ -76,6 +77,7 @@ export default function Navbar() {
               href={link.href}
               onClick={() => setOpen(!open)}
               className="rounded-md hover:bg-gray-50"
+              aria-label={`Go to ${link.label}`}
             >
               &nbsp;{link.label}&nbsp;
             </Link>
@@ -84,7 +86,11 @@ export default function Navbar() {
         <ul className="hidden md:flex">
           {navLinks.map((link) => (
             <li key={link.href} className="hover:text-blue-600 ">
-              <a href={link.href} className="m-2 font-semibold">
+              <a
+                href={link.href}
+                className="m-2 font-semibold"
+                aria-label={`Go to ${link.label}`}
+              >
                 {link.label}
               </a>
             </li>
