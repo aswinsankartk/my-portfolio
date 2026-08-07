@@ -15,9 +15,13 @@ const figtree = Figtree({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://aswinsankartk.vercel.app"),
   title: "Aswin Sankar TK | Full Stack MERN Developer",
   description:
     "Portfolio of Aswin Sankar TK, a full stack developer specializing in React, Next.js, Node.js, Express.js and MongoDB.",
+  verification: {
+    google: "8nizk4PobkHiKBE9GgCFJ5d59-ROmBkVepPiuQY0hzc",
+  },
   keywords: [
     "MERN developer",
     "React developer",
@@ -27,6 +31,36 @@ export const metadata: Metadata = {
     "Full stack Developer",
     "Bengaluru",
   ],
+  openGraph: {
+    title: "Aswin Sankar TK | Full Stack MERN Developer",
+    description:
+      "Portfolio of Aswin Sankar TK, a full stack developer specializing in React, Next.js, Node.js, Express.js and MongoDB.",
+    url: "https://aswinsankartk.vercel.app",
+    siteName: "Aswin Sankar TK | Full Stack MERN Developer",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Aswin Sankar TK | Full Stack MERN Developer",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aswin Sankar TK | Full Stack MERN Developer",
+    description:
+      "Portfolio of Aswin Sankar TK, a full stack developer specializing in React, Next.js, Node.js, Express.js and MongoDB.",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "https://aswinsankartk.vercel.app",
+  },
 };
 
 export default function RootLayout({

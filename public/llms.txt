@@ -1,0 +1,18 @@
+# Aswin Sankar TK
+
+> Full-stack developer portfolio showcasing projects.
+
+Full-stack developer based in Bengaluru, India. BCA graduate 
+from Bangalore University, completed a MERN Stack Developer internship 
+at Codec Technologies.
+
+## Projects
+
+- [BingeStudy](https://bingestudy.vercel.app): Collaborative study platform, flagship project
+
+## Contact
+
+- [GitHub](https://github.com/aswinsankartk)
+- [LinkedIn](https://linkedin.com/in/aswinsankartk)
+- [X](https://x.com/aswinsankartk)
+- [Instagram](https://instagram.com/aswinsankartk)
