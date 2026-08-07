@@ -37,7 +37,10 @@ const techStack = [
 ];
 export default function Skills() {
   return (
-    <section className="p-8 lg:p-9 lg:px-20 border-b border-gray-200">
+    <section
+      id="skills"
+      className="p-8 lg:p-9 lg:px-20 border-b border-gray-200"
+    >
       <p className="text-sm md:text-lg font-medium text-blue-700">
         <span className="animate-pulse">&#11044;</span> &nbsp;
         <span className="text-gray-600">SKILLS</span>
@@ -46,7 +49,7 @@ export default function Skills() {
         {techStack.map((tech) => (
           <div
             key={tech.label}
-            className="flex justify-center gap-2 lg:gap-4 md:gap-3 bg-white py-3 border rounded-lg border-gray-200 shadow-sm"
+            className="flex justify-center hover:scale-103 hover:shadow-lg transition-all gap-2 lg:gap-4 md:gap-3 bg-white py-3 border rounded-lg border-gray-200 shadow-sm"
           >
             <TechIcon
               icon={tech.icon}

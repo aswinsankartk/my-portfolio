@@ -1,8 +1,12 @@
+import { GitHubCalendar } from "react-github-calendar";
 import { FaArrowRight } from "react-icons/fa";
 
 export default function About() {
   return (
-    <section className="flex flex-col justify-between p-8 border-b border-gray-200">
+    <section
+      id="about"
+      className="flex flex-col justify-between p-8 border-b border-gray-200"
+    >
       <div className="flex flex-col justify-center">
         <p className="text-sm font-medium mb-1.5 text-blue-700">
           <span className="animate-pulse">&#11044;</span> &nbsp;
