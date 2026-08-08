@@ -8,6 +8,13 @@ import Footer from "@/components/Footer";
 import Backtotop from "@/components/Backtotop";
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Aswin Sankar TK",
+    alternateName: "Aswin Sankar",
+    url: "https://aswinsankartk.vercel.app/",
+  };
   return (
     <main className="overflow-hidden">
       <Navbar />

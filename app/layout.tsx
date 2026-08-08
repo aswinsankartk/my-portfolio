@@ -23,6 +23,8 @@ export const metadata: Metadata = {
     google: "8nizk4PobkHiKBE9GgCFJ5d59-ROmBkVepPiuQY0hzc",
   },
   keywords: [
+    "Web Developer",
+    "Bingestudy",
     "MERN developer",
     "React developer",
     "Software Engineer",
@@ -73,7 +75,6 @@ export default function RootLayout({
       lang="en"
       className={`${parkinsans.variable} h-full antialiased scroll-smooth`}
     >
-      <link rel="icon" href="/favicon.ico" sizes="any" />
       <body className={parkinsans.className}>{children}</body>
     </html>
   );
