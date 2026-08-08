@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Parkinsans, Figtree } from "next/font/google";
 import "./globals.css";
+import { Providers } from "./providers";
 
 const parkinsans = Parkinsans({
   variable: "--font-parkinsans",
@@ -73,9 +74,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${parkinsans.variable} h-full antialiased scroll-smooth`}
+      className={`${parkinsans.variable} h-full antialiased scroll-smooth dark:bg-ash`}
+      suppressHydrationWarning
     >
-      <body className={parkinsans.className}>{children}</body>
+      <body className={parkinsans.className}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

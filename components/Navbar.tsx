@@ -3,6 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Logo from "./icons/Logo";
 import { IoMenu } from "react-icons/io5";
+import ThemeToggle from "./Themetoggle";
 
 const navLinks = [
   {
@@ -53,15 +54,16 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
   return (
-    <header className="transition-all ease-in-out  backdrop-blur-xl z-9 fixed w-full py-2 px-4 flex justify-between items-center shadow-sm">
+    <header className="transition-all ease-in-out  backdrop-blur-xl z-9 fixed w-full py-2 px-4 flex justify-between items-center shadow-sm dark:shadow-dark-ash">
       <Link href="#" aria-label="Aswin Sankar TK Logo">
-        <Logo color="currentColor" className="w-10" />
+        <Logo color="currentColor" className="w-10 dark:text-muted" />
       </Link>
       <nav>
+        <ThemeToggle />
         <button
           onClick={() => setOpen(!open)}
           ref={buttonRef}
-          className=" cursor-pointer md:hidden hover:scale-105"
+          className=" cursor-pointer md:hidden hover:scale-105 active:scale-95 dark:text-muted"
           aria-label="Toggle Menu"
         >
           <IoMenu size={30} className="translate-y-1" />
@@ -69,14 +71,14 @@ export default function Navbar() {
         <div
           ref={menuRef}
           aria-label="Dropdown Menu"
-          className={`md:hidden ${open ? "block animate-menu-open" : "hidden"}  font-medium text-md gap-1 pl-4 pr-5 py-3 bg-white flex flex-col fixed z-10 -translate-x-30 rounded-lg shadow-xl inset-shadow-sm border border-gray-100`}
+          className={`md:hidden ${open ? "block animate-menu-open" : "hidden"} font-medium text-md gap-1 pl-4 pr-5 py-3 bg-white flex flex-col fixed z-10 -translate-x-30 rounded-lg shadow-xl inset-shadow-sm border border-gray-100 dark:bg-ash dark:text-muted  dark:border-border-gray dark:shadow-ash`}
         >
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={() => setOpen(!open)}
-              className="rounded-md hover:bg-gray-50"
+              className="rounded-md hover:bg-gray-50 hover:dark:bg-transparent active:scale-95 hover:dark:text-hover-muted"
               aria-label={`Go to ${link.label}`}
             >
               &nbsp;{link.label}&nbsp;

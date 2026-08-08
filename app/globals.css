@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --spacing-128: 32rem;
   --spacing-144: 36rem;
@@ -10,8 +12,17 @@
 
   --animate-menu-open: menu-open 200ms;
   --animate-menu-close: menu-close 200ms;
-}
+  --animate-theme-toggle-rotate: theme-toggle-rotate 1s ease-in;
 
+  --color-ash: hsl(0, 0%, 7%);
+  --color-dark-ash: hsl(0, 0%, 5%);
+  --color-muted: hsl(0, 0%, 93%);
+  --color-hover-muted: hsl(0, 0%, 70%);
+  --color-border-gray: hsl(0, 0%, 10%);
+  --color-inset-dark: hsl(0, 0%, 10%);
+  --color-card: hsl(0, 0%, 9%);
+  --color-card-border: hsl(0, 0%, 15%);
+}
 @keyframes menu-open {
   from {
     opacity: 0;
@@ -35,5 +46,14 @@
     opacity: 0;
     scale: var(--text-xs);
     transform: translateX(10px) translateY(0);
+  }
+}
+
+@keyframes theme-toggle-rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(90deg);
   }
 }
