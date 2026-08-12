@@ -54,7 +54,7 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
   return (
-    <header className="transition-all ease-in-out  backdrop-blur-xl z-9 fixed w-full py-2 px-4 flex justify-between items-center shadow-sm dark:shadow-dark-ash">
+    <header className="transition-all ease-in-out  backdrop-blur-xl z-9 fixed w-full py-2 px-4 flex justify-between items-center shadow-sm ">
       <Link href="#" aria-label="Aswin Sankar TK Logo">
         <Logo color="currentColor" className="w-10 dark:text-muted" />
       </Link>

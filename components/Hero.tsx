@@ -21,7 +21,7 @@ export default function Hero() {
         >
           Full Stack Developer
         </h2>
-        <div className="-translate-x-2 hover:scale-101 duration-700 [mask:linear-gradient(to_bottom,black_60%,transparent_98%)]">
+        <div className=" select-none -translate-x-2 hover:scale-101 transition-transform duration-500 [mask:linear-gradient(to_bottom,black_60%,transparent_98%)]">
           <Image
             src="/aswinsankar-headshot.webp"
             width={300}

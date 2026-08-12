@@ -16,7 +16,7 @@ export default function Home() {
     url: "https://aswinsankartk.vercel.app/",
   };
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-hidden selection:bg-blue-500">
       <Navbar />
       <Backtotop />
       <Hero />
