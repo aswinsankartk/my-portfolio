@@ -3,6 +3,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
+  --font-dmsans: var(--font-dmsans);
+  --font-barlowcondensed: var(--font-barlowcondensed);
+  --font-manrope: var(--font-manrope);
   --spacing-128: 32rem;
   --spacing-144: 36rem;
   --spacing-160: 40rem;
@@ -14,14 +17,21 @@
   --animate-menu-close: menu-close 200ms;
   --animate-theme-toggle-rotate: theme-toggle-rotate 200ms ease-in;
 
+  --color-brown: hsl(38, 26%, 15%);
+  --color-yellow: hsl(48, 100%, 52%);
+  --color-dark-yellow: hsl(48, 100%, 40%);
+  --color-sand: hsl(41, 44%, 92%);
+  --color-tan: hsl(36, 100%, 30%);
   --color-ash: hsl(0, 0%, 7%);
   --color-dark-ash: hsl(0, 0%, 5%);
   --color-muted: hsl(0, 0%, 93%);
   --color-hover-muted: hsl(0, 0%, 70%);
-  --color-border-gray: hsl(0, 0%, 10%);
+  --color-border-sand: hsl(41, 44%, 85%);
   --color-inset-dark: hsl(0, 0%, 10%);
   --color-card: hsl(0, 0%, 9%);
   --color-card-border: hsl(0, 0%, 15%);
+
+  --color-selection-yellow: hsla(48, 100%, 52%, 0.7);
 }
 
 @keyframes menu-open {

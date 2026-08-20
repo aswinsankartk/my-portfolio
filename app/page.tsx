@@ -6,6 +6,7 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Backtotop from "@/components/Backtotop";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   const jsonLd = {
@@ -16,13 +17,14 @@ export default function Home() {
     url: "https://aswinsankartk.vercel.app/",
   };
   return (
-    <main className="overflow-hidden selection:bg-blue-500">
+    <main className="overflow-hidden selection:bg-selection-yellow bg-sand">
       <Navbar />
-      <Backtotop />
+      {/* <Backtotop /> */}
       <Hero />
       <About />
-      <Skills />
       <Projects />
+      <Experience />
+      <Skills />
       <Contact />
       <Footer />
     </main>

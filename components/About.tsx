@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex flex-col justify-between p-8 border-b border-gray-200 dark:border-border-gray"
+      className="hidden flex flex-col justify-between p-8 border-b border-gray-200 dark:border-border-gray"
     >
       <div className="flex flex-col justify-center">
         <p className="text-sm font-medium mb-1.5 text-blue-700 dark:text-blue-500">

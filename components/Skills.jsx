@@ -16,16 +16,20 @@ import {
   siJsonwebtokens,
   siVercel,
   siShadcnui,
+  siPython,
+  siLinux,
 } from "simple-icons/icons";
+import SectionTitle from "./SectionTitle";
 const techStack = [
   { icon: siTypescript, label: "Typescript" },
   { icon: siJavascript, label: "Javascript" },
+  { icon: siPython, label: "Python" },
   { icon: siReact, label: "React" },
   { icon: siNextdotjs, label: "Next.js" },
-  { icon: siTailwindcss, label: "Tailwind CSS" },
+  { icon: siTailwindcss, label: "Tailwind" },
   { icon: siShadcnui, label: "shadcn/ui" },
   { icon: siNodedotjs, label: "Node.js" },
-  { icon: siExpress, label: "Express.js" },
+  { icon: siExpress, label: "Express" },
   { icon: siJsonwebtokens, label: "JWT" },
   { icon: siSupabase, label: "Supabase" },
   { icon: siMongodb, label: "MongoDB" },
@@ -33,34 +37,29 @@ const techStack = [
   { icon: siGit, label: "Git" },
   { icon: siGithub, label: "Github" },
   { icon: siPostman, label: "Postman" },
+  { icon: siLinux, label: "Linux" },
   { icon: siVercel, label: "Vercel" },
 ];
 export default function Skills() {
   return (
-    <section
-      id="skills"
-      className="p-8 lg:p-9 lg:px-20 border-b border-gray-200 dark:border-border-gray"
-    >
-      <p className="text-sm md:text-lg font-medium text-blue-700 dark:text-blue-500">
-        <span className="animate-pulse">&#11044;</span> &nbsp;
-        <span className="text-gray-600 dark:text-gray-300">SKILLS</span>
-      </p>
-      <div className=" mt-3 grid grid-cols-2 grid-rows-8 md:grid-cols-4 md:grid-rows-4 gap-3 ">
+    <section id="skills" className="px-8 py-6 border-b border-border-sand">
+      <SectionTitle counter={"04"} text={"THE TOOLBOX"} />
+      <div className=" grid grid-cols-3 pt-8 pb-5 gap-3 ">
         {techStack.map((tech) => (
           <div
             key={tech.label}
             aria-label={tech.label}
-            className="dark:bg-card dark:border-card-border flex justify-center hover:scale-103 hover:shadow-lg transition-all gap-2 lg:gap-4 md:gap-3 bg-white py-3 border rounded-lg border-gray-200 shadow-sm"
+            className="flex flex-col items-center "
           >
             <TechIcon
               icon={tech.icon}
-              size={24}
-              className="lg:size-8 md:size-5 text-blue-500"
+              size={33}
               useOriginalColor={false}
+              className="text-brown mb-3 cursor-pointer"
             />
-            <span className=" font-semibold text-sm lg:text-lg md:text-md flex items-center">
+            <p className="font-bold text-xs font-dmsans text-brown cursor-pointer">
               {tech.label}
-            </span>
+            </p>
           </div>
         ))}
       </div>
