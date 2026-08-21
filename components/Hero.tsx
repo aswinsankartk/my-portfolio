@@ -30,7 +30,7 @@ export default function Hero() {
         width={500}
         height={500}
         alt={"aswinsankar-avatar"}
-        className=" overflow-hidden absolute bottom-0 -right-26 w-[80%] z-10"
+        className=" overflow-hidden absolute bottom-0 -right-26 w-[80%] z-10 pointer-events-none"
       />
     </section>
   );

@@ -5,7 +5,6 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import Backtotop from "@/components/Backtotop";
 import Experience from "@/components/Experience";
 
 export default function Home() {
@@ -17,9 +16,8 @@ export default function Home() {
     url: "https://aswinsankartk.vercel.app/",
   };
   return (
-    <main className="overflow-hidden selection:bg-selection-yellow bg-sand">
+    <main className="overflow-hidden selection:bg-selection-yellow bg-sand ">
       <Navbar />
-      {/* <Backtotop /> */}
       <Hero />
       <About />
       <Projects />

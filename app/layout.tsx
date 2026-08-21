@@ -1,27 +1,10 @@
 import type { Metadata } from "next";
-import { Barlow_Condensed, DM_Sans, Manrope } from "next/font/google";
+import { Barlow_Condensed, Manrope } from "next/font/google";
 import "./globals.css";
 
 const barlowcondensed = Barlow_Condensed({
   variable: "--font-barlowcondensed",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-});
-
-const dmsans = DM_Sans({
-  variable: "--font-dmsans",
-  weight: [
-    "100",
-    "200",
-    "300",
-    "400",
-    "500",
-    "600",
-    "700",
-    "800",
-    "900",
-    "1000",
-  ],
   subsets: ["latin"],
 });
 
@@ -90,7 +73,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${barlowcondensed.variable} ${dmsans.variable} ${manrope.variable} h-full antialiased scroll-smooth scrollbar-thin`}
+      className={`${barlowcondensed.variable}  ${manrope.variable} h-full antialiased scroll-smooth scrollbar-thin`}
       suppressHydrationWarning
     >
       <body>{children}</body>

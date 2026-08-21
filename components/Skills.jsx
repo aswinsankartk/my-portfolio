@@ -43,7 +43,7 @@ const techStack = [
 export default function Skills() {
   return (
     <section id="skills" className="px-8 py-6 border-b border-border-sand">
-      <SectionTitle counter={"04"} text={"THE TOOLBOX"} />
+      <SectionTitle counter={"05"} text={"THE TOOLBOX"} />
       <div className=" grid grid-cols-3 pt-8 pb-5 gap-3 ">
         {techStack.map((tech) => (
           <div
@@ -57,7 +57,7 @@ export default function Skills() {
               useOriginalColor={false}
               className="text-brown mb-3 cursor-pointer"
             />
-            <p className="font-bold text-xs font-dmsans text-brown cursor-pointer">
+            <p className="font-bold text-xs font-manrope text-brown cursor-pointer">
               {tech.label}
             </p>
           </div>

@@ -3,9 +3,12 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
+  --breakpoint-xs: 480px;
+
   --font-dmsans: var(--font-dmsans);
   --font-barlowcondensed: var(--font-barlowcondensed);
   --font-manrope: var(--font-manrope);
+
   --spacing-128: 32rem;
   --spacing-144: 36rem;
   --spacing-160: 40rem;
@@ -22,6 +25,7 @@
   --color-dark-yellow: hsl(48, 100%, 40%);
   --color-sand: hsl(41, 44%, 92%);
   --color-tan: hsl(36, 100%, 30%);
+  --color-dark-sand: hsl(41, 44%, 88%);
   --color-ash: hsl(0, 0%, 7%);
   --color-dark-ash: hsl(0, 0%, 5%);
   --color-muted: hsl(0, 0%, 93%);

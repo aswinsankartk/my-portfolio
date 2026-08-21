@@ -10,16 +10,16 @@ export default function Footer() {
       </div>
       <div className="flex gap-6 items-center">
         <Link href={"mailto:aswinsankartk@gmail.com"}>
-          <IoMdMail size={19} />
+          <IoMdMail size={19} className="text-brown" />
         </Link>
         <Link href={"https://linkedin.com/in/aswinsankartk"}>
-          <FaLinkedin size={19} />
+          <FaLinkedin size={19} className="text-brown" />
         </Link>
         <Link href={"https://github.com/aswinsankartk"}>
-          <FaGithub size={18} />
+          <FaGithub size={18} className="text-brown" />
         </Link>
         <Link href={"https://x.com/aswinsankartk"}>
-          <FaXTwitter size={18} />
+          <FaXTwitter size={18} className="text-brown" />
         </Link>
       </div>
     </footer>

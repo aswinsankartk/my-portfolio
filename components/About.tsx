@@ -1,33 +1,32 @@
-import { GitHubCalendar } from "react-github-calendar";
-import { FaArrowRight } from "react-icons/fa";
+import SectionTitle from "./SectionTitle";
 
 export default function About() {
   return (
-    <section
-      id="about"
-      className="hidden flex flex-col justify-between p-8 border-b border-gray-200 dark:border-border-gray"
-    >
-      <div className="flex flex-col justify-center">
-        <p className="text-sm font-medium mb-1.5 text-blue-700 dark:text-blue-500">
-          <span className="animate-pulse">&#11044;</span> &nbsp;
-          <span className="text-gray-600 dark:text-gray-300">ABOUT</span>
+    <section id="about" className=" px-8 py-6  border-b border-border-sand">
+      <SectionTitle counter={"02"} text={"ABOUT ME"} />
+      <h1 className="font-barlowcondensed font-bold text-5xl tracking-tight pt-3 text-brown">
+        I LIKE BUILDING THINGS THAT MAKE AN IMPACT
+        <span className="text-xl text-yellow ml-1">&#9632;</span>
+      </h1>
+      <div className="text-brown font-manrope font-bold text-[1rem] pt-3 flex flex-col gap-2 pb-2">
+        <p>
+          I'm a full-stack developer focused on building practical and scalable
+          web applications.
         </p>
-        <h2 className="font-semibold text-lg dark:text-muted">
-          I design and build full-stack applications end to end — from database
-          schema to deployed UI — with a focus on clean architecture and
-          real-world usability.
-        </h2>
-      </div>
-      <div className=" flex flex-col gap-2 justify-center">
-        <p className="text-gray-600 dark:text-gray-300 font-medium text-base mt-5">
-          I work with React, Next.js, Node.js, Express, MongoDB, and PostgreSQL.
-          I've built and deployed a full-stack app with authentication,
-          role-based access, and AI integration. My focus is on building
-          scalable applications using MERN stack.
+        <p>
+          I enjoy working with modern technologies like{" "}
+          <span className="bg-yellow px-1 ">Next.js</span>
+          ,&nbsp;
+          <span className="bg-yellow px-1">React</span>,{" "}
+          <span className="bg-yellow px-1">Node.js</span> and{" "}
+          <span className="bg-yellow px-1">MongoDB</span> to bring ideas to
+          life.
         </p>
-        {/* <button className="flex gap-2 text-blue-700 font-semibold items-center">
-          More about me <FaArrowRight />
-        </button> */}
+        <p>
+          From personal projects to real-world solutions, I care about clean
+          code, great user experience and building{" "}
+          <span className="bg-yellow px-1">products that people love.</span>
+        </p>
       </div>
     </section>
   );

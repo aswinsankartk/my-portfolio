@@ -13,10 +13,7 @@ const navLinks = [
     href: "#about",
     label: "About",
   },
-  {
-    href: "#skills",
-    label: "Skills",
-  },
+
   {
     href: "#projects",
     label: "Projects",
@@ -24,6 +21,10 @@ const navLinks = [
   {
     href: "#experience",
     label: "Experience",
+  },
+  {
+    href: "#skills",
+    label: "Skills",
   },
   {
     href: "#contact",
@@ -36,22 +37,6 @@ export default function Navbar() {
   const menuRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
 
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      const target = event.target as Node;
-      if (
-        menuRef.current &&
-        !menuRef.current.contains(target) &&
-        buttonRef.current &&
-        !buttonRef.current.contains(target)
-      ) {
-        setOpen(false);
-      }
-    }
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
   return (
     <header className="transition-all ease-in-out  bg-sand fixed z-11 w-full py-2 px-3 flex justify-between items-center">
       <Link

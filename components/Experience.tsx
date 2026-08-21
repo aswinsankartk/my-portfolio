@@ -4,8 +4,8 @@ import SectionTitle from "./SectionTitle";
 
 export default function Experience() {
   return (
-    <section id="skills" className="px-8 py-6  border-b border-border-sand">
-      <SectionTitle counter={"03"} text={"EXPERIENCE"} />
+    <section id="experience" className="px-8 py-6  border-b border-border-sand">
+      <SectionTitle counter={"04"} text={"EXPERIENCE"} />
       <div className="flex flex-col gap-3 mb-2">
         <h3 className="font-barlowcondensed font-bold text-3xl text-brown pt-4">
           MERN STACK INTERN
