@@ -2,10 +2,13 @@ import SectionTitle from "./SectionTitle";
 import Project from "./Project";
 export default function Projects() {
   return (
-    <section id="projects" className="px-8 py-6  border-b border-border-sand ">
+    <section
+      id="projects"
+      className="px-8 py-6 xl:px-40 xl:py-9 lg:px-30 lg:py-7 border-b border-border-sand "
+    >
       <SectionTitle counter={"03"} text={"SELECTED WORK"} />
-      <div className="flex flex-col gap-3">
-        <div className="flex flex-col">
+      <div className="lg:px-6 flex flex-col gap-3 lg:gap-6">
+        <div className="flex flex-col lg:flex-row  lg:mt-5 lg:gap-6">
           <Project
             title={"BINGESTUDY"}
             slogan={"Study Together. Study Smarter."}
@@ -16,9 +19,9 @@ export default function Projects() {
             techs={["Next.js", "Tailwind", "Supabase", "shadcn/ui", "AI"]}
             repository={"https://github.com/aswinsankartk/bingestudy"}
           />
-          <div className="w-full h-64 border-3 border-yellow rounded-lg bg-[url('/bingestudy-graphic.webp')] bg-center bg-cover bg-no-repeat"></div>
+          <div className="lg:w-3xl w-full h-64 border-3 border-yellow rounded-lg bg-[url('/bingestudy-graphic.webp')] bg-center bg-cover bg-no-repeat"></div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col lg:flex-row lg:gap-6">
           <Project
             title={"SALDO"}
             slogan={"Split Expenses. Not friendships."}
@@ -29,7 +32,7 @@ export default function Projects() {
             techs={["Node.js", "Express", "MongoDB", "JWT"]}
             repository={"https://github.com/aswinsankartk/saldo"}
           />
-          <div className="w-full h-64 border-3 border-yellow rounded-xl bg-[url('/underdevelopment.webp')] bg-center bg-cover bg-no-repeat"></div>
+          <div className="lg:w-3xl w-full h-64 border-3 border-yellow rounded-xl bg-[url('/underdevelopment.webp')] bg-center bg-cover bg-no-repeat"></div>
         </div>
       </div>
     </section>

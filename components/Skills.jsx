@@ -42,9 +42,12 @@ const techStack = [
 ];
 export default function Skills() {
   return (
-    <section id="skills" className="px-8 py-6 border-b border-border-sand">
+    <section
+      id="skills"
+      className="px-8 py-6 xl:px-40 xl:py-9 lg:px-30 lg:py-7 border-b border-border-sand"
+    >
       <SectionTitle counter={"05"} text={"THE TOOLBOX"} />
-      <div className=" grid grid-cols-3 pt-8 pb-5 gap-3 ">
+      <div className=" grid grid-cols-3 xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 pt-8 pb-5 gap-3 lg:gap-5 ">
         {techStack.map((tech) => (
           <div
             key={tech.label}
@@ -55,9 +58,9 @@ export default function Skills() {
               icon={tech.icon}
               size={33}
               useOriginalColor={false}
-              className="text-brown mb-3 cursor-pointer"
+              className="text-brown mb-3 cursor-pointer lg:size-10"
             />
-            <p className="font-bold text-xs font-manrope text-brown cursor-pointer">
+            <p className="font-bold text-xs font-manrope text-brown cursor-pointer lg:text-lg">
               {tech.label}
             </p>
           </div>
