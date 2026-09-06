@@ -38,16 +38,19 @@ export default function Navbar() {
   const buttonRef = useRef<HTMLButtonElement>(null);
 
   return (
-    <header className="transition-all ease-in-out  bg-sand fixed z-11 w-full py-2 px-3 lg:px-4 lg:py-3 flex justify-between items-center border-b border-border-sand lg:shadow-2xs">
+    <header className="transition-all ease-in-out  bg-sand fixed z-11 w-full py-2 px-3 md:px-4 md:py-3 flex justify-between items-center border-b border-border-sand lg:shadow-2xs">
       <Link
         href="#"
         aria-label="Aswin Sankar TK Logo"
         className="flex items-center"
       >
-        <Logo color="currentColor" className="w-9 lg:w-11 text-brown" />
-        <h3 className="font-barlowcondensed font-bold text-brown text-2xl mx-1 lg:text-3xl">
+        <Logo
+          color="currentColor"
+          className=" w-9 md:w-10 lg:w-11 text-brown"
+        />
+        <h3 className="font-barlowcondensed font-bold text-brown text-2xl mx-1 md:text-3xl">
           ASWIN SANKAR TK
-          <span className="text-xs text-yellow ml-0.5 lg:text-lg">&#9632;</span>
+          <span className="text-xs text-yellow ml-0.5 md:text-lg">&#9632;</span>
         </h3>
       </Link>
       <nav>
@@ -82,7 +85,7 @@ export default function Navbar() {
         </div>
         <ul className="hidden md:flex font-manrope">
           {navLinks.map((link) => (
-            <li key={link.href} className="hover:text-tan ">
+            <li key={link.href} className="hover:text-tan">
               <a
                 href={link.href}
                 className="m-2 font-bold lg:text-lg"

@@ -44,10 +44,10 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="px-8 py-6 xl:px-40 xl:py-9 lg:px-30 lg:py-7 border-b border-border-sand"
+      className="md:px-15 md:py-8 px-8 py-6 xl:px-40 xl:py-9 lg:px-30 lg:py-7 border-b border-border-sand"
     >
       <SectionTitle counter={"05"} text={"THE TOOLBOX"} />
-      <div className=" grid grid-cols-3 xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 pt-8 pb-5 gap-3 lg:gap-5 ">
+      <div className=" grid grid-cols-3 xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 pt-8 pb-5 gap-3 md:gap-5 ">
         {techStack.map((tech) => (
           <div
             key={tech.label}
@@ -58,9 +58,9 @@ export default function Skills() {
               icon={tech.icon}
               size={33}
               useOriginalColor={false}
-              className="text-brown mb-3 cursor-pointer lg:size-10"
+              className="text-brown mb-3 cursor-pointer md:size-9 lg:size-10"
             />
-            <p className="font-bold text-xs font-manrope text-brown cursor-pointer lg:text-lg">
+            <p className="font-bold text-xs font-manrope text-brown cursor-pointer md:text-lg">
               {tech.label}
             </p>
           </div>
