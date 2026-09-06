@@ -27,7 +27,10 @@ export default function Experience() {
             }
             target="_blank"
           >
-            <FaArrowRight size={18} className="lg:size-6 md:size-5" />
+            <FaArrowRight
+              size={18}
+              className="lg:size-6 md:size-5 hover:scale-101 active:scale-98 hover:text-tan hover:translate-x-2 transition-all"
+            />
           </Link>
         </p>
       </div>

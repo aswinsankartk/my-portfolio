@@ -42,7 +42,7 @@ export default function About() {
         </p>
       </div>
       <Link href={"Aswin-Sankar-Resume.pdf"} download target="_blank">
-        <button className=" flex items-center gap-2 text-brown pt-5 pb-2 text-lg font-extrabold font-manrope lg:pl-6">
+        <button className=" flex items-center gap-2 text-brown pt-5 pb-2 text-lg font-extrabold font-manrope lg:pl-6 cursor-pointer hover:scale-101 active:scale-98 transition-all hover:text-tan">
           <MdOutlineFileDownload size={25} /> DOWNLOAD RESUME
         </button>
       </Link>

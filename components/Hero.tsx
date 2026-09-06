@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { FaArrowDown } from "react-icons/fa";
-import SectionTitle from "./SectionTitle";
 export default function Hero() {
   return (
     <section
@@ -16,7 +15,7 @@ export default function Hero() {
           BUILDING WHAT MATTERS
           <span className="text-3xl lg:text-5xl text-yellow ml-1">&#9632;</span>
         </h1>
-        <p className="lg:w-128 lg:text-xl md:text-xl w-72 font-manrope text-md font-extrabold mt-10 leading-relaxed">
+        <p className="lg:w-128 md:text-xl w-72 font-manrope text-md font-extrabold mt-10 leading-relaxed">
           Full-stack developer who turns ideas into thoughtful, functional
           digital experiences.
         </p>

@@ -58,9 +58,9 @@ export default function Skills() {
               icon={tech.icon}
               size={33}
               useOriginalColor={false}
-              className="text-brown mb-3 cursor-pointer md:size-9 lg:size-10"
+              className="text-brown mb-3 cursor-pointer md:size-9 lg:size-10 hover:text-tan"
             />
-            <p className="font-bold text-xs font-manrope text-brown cursor-pointer md:text-lg">
+            <p className="font-bold text-xs font-manrope text-brown cursor-pointer md:text-lg hover:text-tan">
               {tech.label}
             </p>
           </div>

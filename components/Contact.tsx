@@ -21,7 +21,7 @@ export default function Contact() {
       <Link
         href={"https://calendly.com/aswinsankartk"}
         target="_blank"
-        className="lg:pl-6 md:text-lg flex gap-5 items-center font-manrope  font-black text-md text-tan mt-8 w-44 lg:w-72"
+        className="lg:pl-6 md:text-lg flex gap-5 items-center font-manrope  font-black text-md text-tan mt-8 w-44 lg:w-72 hover:scale-101 active:scale-98 hover:text-brown transition-all"
       >
         <p>GET IN TOUCH</p>
         <FaArrowRight className="cursor-pointer" />

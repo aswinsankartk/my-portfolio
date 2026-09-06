@@ -4,7 +4,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="md:px-15 md:py-8 px-8 py-6 xl:px-40 xl:py-9 lg:px-30 lg:py-7 border-b border-border-sand "
+      className="md:px-15 md:py-8 px-8 py-6 xl:px-40 xl:py-9 lg:px-30 lg:py-7 border-b border-border-sand transition-all"
     >
       <SectionTitle counter={"03"} text={"SELECTED WORK"} />
       <div className="lg:px-6 flex flex-col gap-3 md:gap-5 lg:gap-6">

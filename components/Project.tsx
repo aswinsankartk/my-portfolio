@@ -22,7 +22,10 @@ export default function Project({
       <Link href={`${demo}`}>
         <h3 className="font-barlowcondensed font-bold text-brown text-3xl md:text-4xl lg:text-5xl pt-4 lg:pt-0 flex items-center">
           {title}{" "}
-          <IoIosArrowDropright size={20} className="ml-2 lg:size-8 md:size-7" />
+          <IoIosArrowDropright
+            size={20}
+            className="ml-2 lg:size-8 md:size-7 hover:text-tan"
+          />
         </h3>
       </Link>
 
@@ -45,7 +48,7 @@ export default function Project({
       <Link
         href={`${repository}`}
         target="_blank"
-        className="w-44 flex gap-5 items-center pt-3 pb-4 md:mb-3 md:text-[1rem] font-black text-sm lg:text-lg text-tan"
+        className="w-44 flex gap-5 items-center pt-3 pb-4 md:mb-3 md:text-[1rem] font-black text-sm lg:text-lg text-tan hover:scale-101 active:scale-98 hover:text-brown transition-all"
       >
         <p>VIEW PROJECT</p>
         <FaArrowRight className="cursor-pointer" />

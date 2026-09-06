@@ -57,13 +57,16 @@ export default function Navbar() {
         <button
           onClick={() => setOpen(!open)}
           ref={buttonRef}
-          className="absolute z-15 cursor-pointer md:hidden right-4 top-3"
+          className="absolute z-15 cursor-pointer md:hidden right-4 top-3 "
           aria-label="Toggle Menu"
         >
           {open ? (
-            <IoClose size={30} className=" text-brown" />
+            <IoClose size={30} className=" text-brown " />
           ) : (
-            <IoMenu size={30} className=" text-brown" />
+            <IoMenu
+              size={30}
+              className=" text-brown hover:text-tan transition-all"
+            />
           )}
         </button>
         <div
@@ -76,10 +79,10 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(!open)}
-              className=""
+              className="hover:text-tan hover:scale-102 active:scale-98 transition-all"
               aria-label={`Go to ${link.label}`}
             >
-              &nbsp;{link.label}&nbsp;
+              {link.label}
             </Link>
           ))}
         </div>

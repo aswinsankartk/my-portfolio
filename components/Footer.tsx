@@ -10,16 +10,28 @@ export default function Footer() {
       </div>
       <div className="flex gap-6 md:gap-7 lg:gap-8 items-center">
         <Link href={"mailto:aswinsankartk@gmail.com"}>
-          <IoMdMail size={19} className="text-brown md:size-6" />
+          <IoMdMail
+            size={19}
+            className="text-brown md:size-6 hover:scale-101 active:scale-98 hover:text-tan transition-all"
+          />
         </Link>
         <Link href={"https://linkedin.com/in/aswinsankartk"}>
-          <FaLinkedin size={19} className="text-brown md:size-6" />
+          <FaLinkedin
+            size={19}
+            className="text-brown md:size-6 hover:scale-101 active:scale-98 hover:text-tan transition-all"
+          />
         </Link>
         <Link href={"https://github.com/aswinsankartk"}>
-          <FaGithub size={18} className="text-brown md:size-6" />
+          <FaGithub
+            size={18}
+            className="text-brown md:size-6 hover:scale-101 active:scale-98 hover:text-tan transition-all"
+          />
         </Link>
         <Link href={"https://x.com/aswinsankartk"}>
-          <FaXTwitter size={18} className="text-brown md:size-6" />
+          <FaXTwitter
+            size={18}
+            className="text-brown md:size-6 hover:scale-101 active:scale-98 hover:text-tan transition-all"
+          />
         </Link>
       </div>
     </footer>
