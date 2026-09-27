@@ -6,6 +6,6 @@ export default function robots() {
         allow: ["/"],
       },
     ],
-    sitemap: "https://aswinsankartk.vercel.app/sitemap.xml",
+    sitemap: "https://aswinsankartk.com/sitemap.xml",
   };
 }
