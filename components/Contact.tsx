@@ -9,7 +9,7 @@ export default function Contact() {
       id="contact"
       className="transition-all md:px-15 md:py-8 flex-col xl:px-40 xl:py-9 lg:px-30 lg:py-7  overflow-hidden border-b border-border-sand px-8 py-6 relative h-150 lg:h-144"
     >
-      <SectionTitle counter={"06"} text={"LET'S BUILD"} />
+      <SectionTitle counter={"07"} text={"LET'S BUILD"} />
       <h1 className="lg:text-8xl lg:px-6 font-barlowcondensed font-bold text-7xl leading-16 tracking-tight pt-3 text-brown">
         SOMETHING GREAT
         <span className="text-2xl text-yellow ml-1 lg:text-4xl">&#9632;</span>

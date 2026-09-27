@@ -13,7 +13,7 @@ export default function Home() {
     "@type": "WebSite",
     name: "Aswin Sankar TK",
     alternateName: "Aswin Sankar",
-    url: "https://aswinsankartk.vercel.app/",
+    url: "https://aswinsankartk.com/",
   };
   return (
     <main className="overflow-hidden selection:bg-selection-yellow bg-sand ">

@@ -15,7 +15,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://aswinsankartk.vercel.app"),
+  metadataBase: new URL("https://aswinsankartk.com"),
   title: "Aswin Sankar TK | Software Developer",
   description:
     "Portfolio of Aswin Sankar TK, a software developer specializing in React, Next.js, Node.js, Express.js and MongoDB.",
@@ -31,13 +31,16 @@ export const metadata: Metadata = {
     "Software Developer",
     "JavaScript Developer",
     "Full stack Developer",
+    "Saldo",
+    "MERN",
+    "Bangalore",
     "Bengaluru",
   ],
   openGraph: {
     title: "Aswin Sankar TK | Software Developer",
     description:
       "Portfolio of Aswin Sankar TK, a software developer specializing in React, Next.js, Node.js, Express.js and MongoDB.",
-    url: "https://aswinsankartk.vercel.app",
+    url: "https://aswinsankartk.com",
     siteName: "Aswin Sankar TK | Software Developer",
     images: [
       {
@@ -61,7 +64,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://aswinsankartk.vercel.app",
+    canonical: "https://aswinsankartk.com",
   },
 };
 
