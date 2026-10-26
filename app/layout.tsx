@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Barlow_Condensed, Manrope } from "next/font/google";
 import "./globals.css";
@@ -32,6 +33,7 @@ export const metadata: Metadata = {
     "JavaScript Developer",
     "Full stack Developer",
     "Saldo",
+    "Under limit",
     "MERN",
     "Bangalore",
     "Bengaluru",
@@ -79,7 +81,10 @@ export default function RootLayout({
       className={`${barlowcondensed.variable}  ${manrope.variable} h-full antialiased scroll-smooth scrollbar-thin`}
       suppressHydrationWarning
     >
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

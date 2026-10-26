@@ -23,6 +23,19 @@ export default function Projects() {
         </div>
         <div className="flex flex-col lg:flex-row lg:gap-6">
           <Project
+            title={"UNDER LIMIT"}
+            slogan={"Fits the form on the first try."}
+            description={
+              "A browser-based tool that resizes and compresses photos and signatures to an exact pixel size and file-size range for exam and job application forms, with everything processed on your device."
+            }
+            demo={"https://under-limit.vercel.app"}
+            techs={["Next.js", "TypeScript", "Tailwind", "Canvas API"]}
+            repository={"https://github.com/aswinsankartk/under-limit"}
+          />
+          <div className="lg:w-3xl w-full h-64 border-3 border-tan rounded-xl bg-[url('/under-limit-graphic.webp')] bg-center bg-cover bg-no-repeat"></div>
+        </div>
+        <div className="flex flex-col lg:flex-row lg:gap-6">
+          <Project
             title={"SALDO"}
             slogan={"Split Expenses. Not friendships."}
             description={
