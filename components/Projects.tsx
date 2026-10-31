@@ -19,7 +19,7 @@ export default function Projects() {
             techs={["Next.js", "Tailwind", "Supabase", "shadcn/ui", "AI"]}
             repository={"https://github.com/aswinsankartk/bingestudy"}
           />
-          <div className="lg:w-3xl w-full h-64 border-3 border-tan rounded-lg bg-[url('/bingestudy-graphic.webp')] bg-center bg-cover bg-no-repeat"></div>
+          <div className="lg:w-3xl w-full h-40 md:h-64 border-3 border-tan rounded-lg bg-[url('/bingestudy-graphic.webp')] bg-center bg-cover bg-no-repeat"></div>
         </div>
         <div className="flex flex-col lg:flex-row lg:gap-6">
           <Project
@@ -32,7 +32,7 @@ export default function Projects() {
             techs={["Next.js", "TypeScript", "Tailwind", "Canvas API"]}
             repository={"https://github.com/aswinsankartk/under-limit"}
           />
-          <div className="lg:w-3xl w-full h-64 border-3 border-tan rounded-xl bg-[url('/under-limit-graphic.webp')] bg-center bg-cover bg-no-repeat"></div>
+          <div className="lg:w-3xl w-full h-40 md:h-64 border-3 border-tan rounded-xl bg-[url('/under-limit-graphic.webp')] bg-center bg-cover bg-no-repeat"></div>
         </div>
         <div className="flex flex-col lg:flex-row lg:gap-6">
           <Project
@@ -45,7 +45,7 @@ export default function Projects() {
             techs={["Node.js", "Express", "MongoDB", "JWT", "..."]}
             repository={"https://github.com/aswinsankartk/saldo"}
           />
-          <div className="lg:w-3xl w-full h-64 border-3 border-tan rounded-xl bg-[url('/underdevelopment.webp')] bg-center bg-cover bg-no-repeat"></div>
+          <div className="lg:w-3xl w-full h-40 md:h-64 border-3 border-tan rounded-xl bg-[url('/underdevelopment.webp')] bg-center bg-cover bg-no-repeat"></div>
         </div>
       </div>
     </section>

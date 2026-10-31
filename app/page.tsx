@@ -16,15 +16,23 @@ export default function Home() {
     url: "https://aswinsankartk.com/",
   };
   return (
-    <main className="overflow-hidden selection:bg-selection-yellow bg-sand ">
-      <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <Experience />
-      <Skills />
-      <Contact />
-      <Footer />
-    </main>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd),
+        }}
+      />
+      <main className="overflow-hidden selection:bg-selection-yellow bg-sand ">
+        <Navbar />
+        <Hero />
+        <About />
+        <Projects />
+        <Experience />
+        <Skills />
+        <Contact />
+        <Footer />
+      </main>
+    </>
   );
 }

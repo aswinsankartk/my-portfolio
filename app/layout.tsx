@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   title: "Aswin Sankar TK | Software Developer",
   description:
     "Portfolio of Aswin Sankar TK, a software developer specializing in React, Next.js, Node.js, Express.js and MongoDB.",
+  applicationName: "Aswin Sankar TK",
   verification: {
     google: "8nizk4PobkHiKBE9GgCFJ5d59-ROmBkVepPiuQY0hzc",
   },
